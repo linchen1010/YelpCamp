@@ -11,7 +11,8 @@ const Campground = require('./models/campground');
 const Comment = require('./models/comment');
 const User = require('./models/user');
 
-let port = 3000;
+let port = process.env.PORT || 3000;
+let url = process.env.MONGO_URI || 'mongodb://localhost/yelp_camp_v11';
 
 // requring routes
 let commentRoutes = require('./routes/comments'),
@@ -19,7 +20,7 @@ let commentRoutes = require('./routes/comments'),
   indexRoutes = require('./routes/index');
 
 // connect to mongodb
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
