@@ -12,9 +12,7 @@ const Comment = require('./models/comment');
 const User = require('./models/user');
 
 let port = process.env.PORT || 3000;
-let url =
-  'mongodb+srv://shilinchen:B1coU2K72unN9hJ3@cluster0.zvwnr.mongodb.net/YelpCamp?retryWrites=true&w=majority' ||
-  'mongodb://localhost/yelp_camp_v11';
+let url = process.env.MONGO_URI || 'mongodb://localhost/yelp_camp_v11';
 
 // requring routes
 let commentRoutes = require('./routes/comments'),
