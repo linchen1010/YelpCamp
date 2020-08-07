@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -18,7 +19,7 @@ let commentRoutes = require('./routes/comments'),
   indexRoutes = require('./routes/index');
 
 // connect to mongodb
-mongoose.connect('mongodb://localhost/yelp_camp_v11', {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
