@@ -1,0 +1,9 @@
+.delete-form {
+    display: inline;
+}
+
+#welcome {
+    font-family: 'Courgette', cursive; 
+    font-size: 50px; 
+    font-weight: bolder;
+}
