@@ -5,7 +5,6 @@ const { ConnectionStates } = require('mongoose');
 const { route } = require('./comments');
 let middleware = require('../middleware');
 const NodeGeocoder = require('node-geocoder');
-const keys = require('../config/key');
 
 let options = {
   provider: 'google',
