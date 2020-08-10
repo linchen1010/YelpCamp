@@ -44,7 +44,6 @@ To see the app in action, go to [https://yelpcamp-linc.herokuapp.com](https://ye
 * [express](https://expressjs.com/)
 * [mongoDB](https://www.mongodb.com/)
 * [mongoose](http://mongoosejs.com/)
-* [async](http://caolan.github.io/async/)
 * [passport](http://www.passportjs.org/)
 * [passport-local](https://github.com/jaredhanson/passport-local#passport-local)
 * [express-session](https://github.com/expressjs/session#express-session)
