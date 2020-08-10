@@ -4,7 +4,7 @@ YelpCamp is a Node.js web application with RESTful routing project from the Udem
 
 ## Live Demo
 
-[!web page][/image/Campground.png]
+![web page](/image/Campground.png)
 To see the app in action, go to [https://yelpcamp-linc.herokuapp.com](https://yelpcamp-linc.herokuapp.com)
 
 ## Features
